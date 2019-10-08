@@ -1,0 +1,224 @@
+<!-- This is a comment-->
+<!-- This code is based on the following tutorial -->
+<!-- https://www.youtube.com/watch?v=UB1O30fR-EE -->
+
+<!DOCTYPE html>   <!-- Declaration, tells the browser what type of html the page
+                  is wirtten in-->
+
+<!-- Tags format the way that information and text is displayed-->
+
+<html>            <!-- First tag, come in pairs end tag is the same but with
+                  forward slash  -->
+
+  <head>          <!-- Head has page title, links to CSS and javascript files-->
+    <title> This is a title </title> <!-- title is what can bee seen in
+                                              the tab-->
+  </head>
+
+  <body>          <!-- Body has the stuff that is displayed in the browser-->
+
+      <a href="howtowrite2.html"> Go to next tutorial </a>
+
+      <!-- Headings -->
+      <h1> Heading One </h1>
+      <h2> Heading Two </h2>
+      <h3> Heading Three </h3>
+      <h4> Heading Four </h4>
+      <h5> Heading Five </h5>
+      <h6> Heading Six </h6>
+
+      <!-- Paragraph -->
+      <p>
+        <!-- p have default margins, can be seen in chrome with F12-->
+        <!-- Inline tags (strong, em etc. do not start a new line)-->
+        <!-- Block tags (h1, p etc. start a new line)-->
+        <!-- Generate dummy text by writing lorem and pressing tab-->
+        <!-- strong is bold by default, can be changed in CSS-->
+        <!-- em is italic by default, can be changed in CSS-->
+        Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit,
+        sed do eiusmod tempor <strong> incididunt ut labore </strong>
+        et dolore magna aliqua.
+        Ut enim ad minim veniam,
+        quis nostrud <em>exercitation ullamco </em> laboris nisi ut aliquip ex
+        ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        <!-- a is the tag for links -->
+        <!-- href is location that we want to open, locally or externally -->
+        <!-- target="_blank" opens the location in a new tab -->
+        Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit,
+        <a href="http://google.com" target="_blank"> sed do eiusmod </a>
+        tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+
+      <!-- Lists -->
+      <!-- u1 is bullet points, li = list item -->
+      <u1>
+          <li> List Item 1 </li>
+          <li> List Item 2 </li>
+          <li> List Item 3 </li>
+          <li> List Item 4 </li>
+      </u1>
+
+      <!--- Line break -->
+      <br>
+
+      <!-- o1 is a order list (numbered), li = list item -->
+      <o1>
+          <li> List Item 1 </li>
+          <li> List Item 2 </li>
+          <li> List Item 3 </li>
+          <li> List Item 4 </li>
+      </o1>
+
+      <!--- Line break -->
+      <br>
+
+      <!-- Tables -->
+      <table>
+        <thead>  <!-- Headings of each column-->
+          <tr>   <!-- Table row -->
+            <th> Name </th>  <!-- Table heading -->
+            <th> Email </th>
+            <th> Age </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> Name Name </td> <!-- Table data-->
+            <td> email.email@email.com </td>
+            <td> Nbr </td>
+          </tr>
+          <tr>
+            <td> Name2 Name2 </td> <!-- Table data-->
+            <td> email2.email2@email.com </td>
+            <td> Nbr2 </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--- Line break -->
+      <br>
+      <!-- Horizontal ruler-->
+      <hr>
+
+      <!-- Forms -->
+      <!-- Only the look of the form -->
+      <!-- action submits the form to a specific page -->
+      <!-- method = "POST", we make a post request to the server -->
+      <form action="process.php" method="POST">
+        <lable> First Name </lable>
+        <!-- Name is related to the server-->
+        <!-- Placeholder is a text that is dispalyed in the field, -->
+        <!-- but is removed when you start writing -->
+        <input type = "text" name="firstName" placeholder="Enter first name"> </input>
+        <lable> Last Name </lable>
+        <input type = "text" name="lastName"> </input>
+        <!-- Form inputs are now on same line (inline )-->
+        <!-- Use div to get different lines (block tag)-->
+        <div>
+          <lable> First Name </lable>
+          <input type = "text" name="firstName"> </input>
+        </div>
+        <br>
+        <div>
+        <lable> Last Name </lable>
+        <input type = "text" name="lastName"> </input>
+      </div>
+      <br>
+      <div>
+        <lable> email </lable>
+        <!-- Type email checks that it is an email as input-->
+        <input type = "email" name="email"> </input>
+      </div>
+      <br>
+      <div>
+        <lable> message </lable>
+        <!-- textarea gives bigger input space-->
+        <!-- Size can be changed in browser by dragging-->
+        <textarea name="message"> </textarea>
+      </div>
+      <br>
+      <div>
+        <lable> Gender </lable>
+        <!-- Select gives us a list to selectfrom -->
+        <select name = "gender">
+        <option value = "male"> Male </option>
+        <option value = "female"> Female </option>
+        <option value = "other"> Other </option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <lable> Age </lable>
+        <!-- Gives us a bar to up or down, value = starting value -->
+        <input type = "number" name="age" value="38"> </input>
+        </select>
+      </div>
+      <br>
+      <div>
+        <lable> Brithday </lable>
+        <!--- Gives us a date selector -->
+        <input type = "date" name="birthday" > </input>
+        </select>
+      </div>
+      <br>
+      <!-- Submit button -->
+      <!-- Value is the text of the button-->
+      <input type= "submit" name = "submit" value = "submit"> </input>
+      </form>
+
+      <!-- Button -->
+      <br>
+      <button click> Click Me </button>
+
+      <!-- Images -->
+      <!-- img is a self-closing tag  -->
+      <br>
+      <br>
+      <!-- alt = if image can't be found, display text -->
+      <!-- width and height are in pixels-->
+      <img src ="images/sample.jpg" alt = "Me sample image" width = 200 height = 200>
+
+      <!-- We can have the picture as a link if we want to be able to click -->
+      <!-- on it and open it in the browser -->
+      <a href = "images/sample2.jpg">
+        <img src ="images/sample2.jpg" alt = "Me sample image" width = 200 height = 200>
+      </a>
+
+      <!--  Quotations -->
+      <!--  The link is only visible in the source code -->
+      <blockquote cite="http://sydsvenskan.se">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </blockquote>
+
+      <!--  Hover above to see what is written in title -->
+      <p> The <abbr title ="World Wide Web"> WWW </abbr> is awesome </p>
+
+      <!--  Text inside cite gets italic -->
+      <p> My first <cite> HTLM crash course </cite> </p>
+
+  </body>
+
+</html>

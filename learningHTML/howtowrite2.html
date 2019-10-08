@@ -1,0 +1,92 @@
+<!-- html + tab to get basic structure in place--->
+<!-- This code is based on the following tutorial -->
+<!-- https://www.youtube.com/watch?v=UB1O30fR-EE -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title> HTML guide 2</title>
+
+    <!-- Google looks at meta when it scans you webpage -->
+    <meta name="description" content="Learning HTML">
+    <meta name="keywords:" content="learning, html">
+
+    <!-- Use # to grab onto id -->
+    <!-- color = text color -->
+    <style media="screen">
+      #mainHeader {
+          background-color:black;
+          color:white;
+          padding:10px;
+        }
+        #main-footer{
+          text-align: center;
+          font-size:18px;
+        }
+    </style>
+
+  </head>
+  <body>
+    <header id="mainHeader">
+      <h1> My website </h1>
+    </header>
+
+    <a href="howToWrite.html"> Go to previous tutorial </a>
+
+    <section>
+      <article class = "post">
+        <h3> Blog Post One</h3>
+        <small> Posted by Niklas on October 8th</small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="post1.html"> Read More</a>
+      </article>
+
+      <article class = "post">
+        <h3> Blog Post Two</h3>
+        <small> Posted by Niklas on October 8th</small>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+          dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <a href="post1.html"> Read More</a>
+      </article>
+    </section>
+
+    <aside class="">
+      <h3> Categories </h3>
+      <nav>
+        <ul>
+          <!-- # goes to the same page -->
+          <li> <a href="#"> Category 1</a> </li>
+          <li> <a href="#"> Category 2</a> </li>
+          <li> <a href="#"> Category 3</a> </li>
+          <li> <a href="#"> Category 4</a> </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <footer id = "main-footer">
+      <!-- &copy  give the copyright symbol -->
+      <p> Copyrigth &copy 2019, My Website</p>
+    </footer>
+
+  </body>
+</html>
