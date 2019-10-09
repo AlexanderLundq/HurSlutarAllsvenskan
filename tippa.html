@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <title> Hur slutar Allsvenskan? </title>
+
+  <style media="screen">
+    #mainHeader {
+        background-color:LIGHTCYAN;
+        color:black;
+        padding:10px;
+      }
+    .menu {
+            position: sticky;
+            top: 0;
+            background-color: AQUAMARINE;
+            padding:10px 0px 10px 0px;
+            color:white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+     .menu-log {
+          right: auto;
+          float: right;
+      }
+      #mainFooter{
+        text-align: center;
+        font-size:18px;
+      }
+  </style>
+
+  <body>
+    <header id="mainHeader">
+      <h1> Hur kommer Allsvenskan 2020 att sluta? </h1>
+    </header>
+
+    <!-- Menu Navigation Bar -->
+    <div class="menu">
+      <a href="index.html">Hem</a>
+      <a href="#tippa.html">Tävla</a>
+    <div class="menu-log">
+      <a href="#login">LOGIN</a>
+    </div>
+    </div>
+
+    <div class = "body_sec">
+        <section id = "content">
+
+          <form action="process.php" method="POST">
+            <h4>Namn </h4>
+            <input type = "text" name="Name" placeholder="Namn"> </input>
+
+            <br>
+            <h4>Birthday </h4>
+              <input type = "date" name="birthday" > </input>
+            </div>
+
+            <br>
+            <div>
+              <h4>E-post </h4>
+              <input type = "email" name="email" placeholder="mail@example.com"> </input>
+            </div>
+
+            <br>
+            <div>
+            <h4>Ange ditt favoritlag i Allsvenskan 2020 </h4>
+            <select name="favTeam">
+                <option value = "" disabled selection> Favoritlag </option>
+                <option value="AFC"> AFC Eskilstuna</option>
+                <option value="AIK"> AIK</option>
+                <option value="Djurgården"> Djurgården </option>
+                <option value="Elfsborg"> Elfsborg </option>
+                <option value="Falkenberg"> Falkenberg </option>
+                <option value="Hammarby"> Hammarby </option>
+                <option value="Helsingborg"> Helsingborg </option>
+                <option value="Häcken"> Häcken </option>
+                <option value="IFKGöteborg"> IFK Göteborg </option>
+                <option value="IFKNorrköping"> IFK Norrköping </option>
+                <option value="Kalmar"> Kalmar </option>
+                <option value="MalmöFF"> Malmö FF </option>
+                <option value="Sirius"> Sirius </option>
+                <option value="Sundsvall"> Sundsvall </option>
+                <option value="Örebro"> Örebro </option>
+                <option value="Östersund"> Östersund </option>
+            </select>
+            </div>
+
+            <br>
+            <input type= "submit" name = "submit" value = "submit"> </input>
+          </form>
+
+        </section>
+    </div>
+
+      <footer id = "mainFooter">
+        <!-- &copy  give the copyright symbol -->
+        <p> Copyrigth &copy 2019, Niklas Karlsson </p>
+      </footer>
+
+  </body>
+
+</html>
