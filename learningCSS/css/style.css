@@ -1,4 +1,70 @@
+/* CSS file with all styling/formating */
+
+/*
+*{
+ To target everything, if you want to start by resetting defaults
+}
+*/
+
+.container {
+  /*width:960px;*/
+  width:80%; /* Makes it responsive to changes in window size*/
+  margin:auto;
+  /*
+  margin: 5px 10px 5px 10px;  top right bottom left
+  margin: 5px 10px;           top=bottom=5 right=left=10
+  */
+}
+
+/*
+Can set all h1 to a specific styling
+*/
 h1 {
   text-align: center;
-  color: green;
+  color: red;
+}
+
+/* Reference an id with # */
+#box-id {
+  background-color: green;
+
+  /*
+  Structure of Padding, Border and Margin (also on sides)
+
+          Margin
+          Border
+          Padding
+          Content
+          Paddding
+          border
+          Margin
+
+  */
+
+  /*  Border for div with class box-id
+      Border = surrounding the content */
+  border: 5px red solid; /* top, right, bottom, left all the same style */
+  /*  Padding for div with class box-id
+      Padding = space between content and border */
+  padding: 20px;
+  /*  Margin for div with class box-id
+      Margin = Space between border and edges */
+  margin: 20px;
+}
+
+/* Reference an class with . */
+.box-class {
+  background-color: blue;
+}
+
+/* Targets h1 within class box-class */
+.box-class h1{
+  font-family: Tahoma;
+  font-weight: 800;
+  font-style: italic;
+  text-decoration: underline;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  word-spacing: 1em;
+
 }
