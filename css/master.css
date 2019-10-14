@@ -1,4 +1,6 @@
-#mainHeader {
+/* ----------------------------  Header  ------------------------------- */
+
+.mainHeader {
     background-color:LIGHTCYAN;
     color:black;
     padding:10px;
@@ -12,11 +14,23 @@
         margin: 0 auto;
         overflow: hidden;
     }
- .menu-log {
+
+.menu a{
+  text-decoration: none;  /*No underline*/
+  color:#000;             /*Black color*/
+}
+
+.menu a:hover{
+  color:red;              /*Set the color to red*/
+}
+
+ .menu-login {
       right: auto;
       float: right;
   }
-  #mainFooter{
+
+/* ----------------------------  Footer  ------------------------------- */
+  .mainFooter{
     text-align: center;
     font-size:18px;
   }

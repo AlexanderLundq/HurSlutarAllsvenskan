@@ -1,0 +1,8 @@
+.tippa-main a{
+  text-decoration: none;  /*No underline*/
+  color:red;             /*Black color*/
+}
+
+.image-tavla{
+  text-align: center;
+}

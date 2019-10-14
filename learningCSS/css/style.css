@@ -6,9 +6,31 @@
 }
 */
 
+/* Change link styles for all links */
+a{
+  text-decoration: none;  /* No underline */
+  color: #000;
+}
+
+/* Change attributes of link when hovering over it */
+a:hover{
+  color:red;
+}
+
+/* Changes the color of link when clicked */
+a:active{
+  color:green;
+}
+
+/* Changes the color of link if it has been visited */
+a:visited{
+  color:blue;
+}
+
+/* Style for main content */
 .container {
   /*width:960px;*/
-  width:80%; /* Makes it responsive to changes in window size*/
+  width:80%; /* Makes it responsive to changes in window size */
   margin:auto;
   /*
   margin: 5px 10px 5px 10px;  top right bottom left
@@ -16,9 +38,20 @@
   */
 }
 
-/*
-Can set all h1 to a specific styling
-*/
+/* Style for all buttons */
+.button {
+  background-color: #333;
+  color: white;
+  padding: 10px 15px; /* Top/bottom and left/right */
+  border:none;
+}
+
+.button:hover {
+  background: red;
+  color: #fff;
+}
+
+/* Can set all h1 to a specific styling */
 h1 {
   text-align: center;
   color: red;
@@ -66,5 +99,38 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   word-spacing: 1em;
+}
 
+/* Change the attributes of list inside div namned categories */
+.categories ul{
+  padding: 0;             /* Move all the way to the edges */
+  padding-left: 20px;     /* Add space to the left for list */
+  list-style: square;     /* Squares instead of bullet-points */
+}
+
+/* Change the attributes of list items inside div namned categories */
+.categories li{
+  padding-bottom: 8px;              /* Spacing below every item */
+  border-bottom: dotted 1px #333;   /* Dotted line below every item */
+  /* Add pictue to the side of the list item */
+  /* Resize image in photo editor */
+  list-style-image: url("../images/check-mark.png");
+}
+
+.my-form {
+  padding:20px;
+}
+
+.my-form .form-group{
+  padding-bottom: 15px; /* Set spacing between inputs */
+}
+
+.my-form label {
+  display:block; /* Change from inline (everything on same line) to block*/
+}
+
+/* Target only input with type text to not make button bigger */
+.my-form input[type="text"], .my-form textarea{
+  padding:8px;
+  width: 100%; /* Makes area where you enter response bigger */
 }

@@ -11,7 +11,7 @@
   <body>
 
     <!-- Class can be reused-->
-    <!-- Container class to set width and margins-->
+    <!-- Container class to set width and margins for all content-->
     <div class="container">
 
       <!-- Id should be unique -->
@@ -22,7 +22,36 @@
       <div class="box-class">
         <h1> Hello World </h1>
       </div>
-  </div>
+
+      <!-- A list with links -->
+      <div class="categories">
+        <h2> Categories </h2>
+        <ul>
+          <li> <a href="#"> Catergory 1 </a> </li>
+          <li> <a href="none.html"> Catergory 2 </a> </li>
+          <li> <a href="none.html"> Catergory 3 </a> </li>
+          <li> <a href="#"> Catergory 4 </a> </li>
+
+        </ul>
+      </div>
+
+      <form class="my-form">
+        <div class="form-group">
+            <label> Name. </label>
+            <input type="text" name="name">
+        </div>
+        <div class="form-group">
+            <label> Email. </label>
+            <input type="text" name="email">
+        </div>
+        <div class="form-group">
+            <label> Message. </label>
+            <textarea name="message"></textarea>
+        </div>
+        <input class = "button" type="submit" value="Submit">
+      </form>
+
+    </div> <!-- Class = container -->
 
   </body>
 
