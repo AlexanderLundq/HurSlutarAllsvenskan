@@ -2,7 +2,8 @@
 
 <html>
 
-<!-- ~~~~~~~~~~~~~~~~~~~ Title and CSS links ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Head ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<head>
 
   <!-- What can be seen in tab -->
   <title> Hur slutar Allsvenskan? </title>
@@ -11,47 +12,64 @@
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/index.css">
 
+</head>
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<body>
 
-  <body>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Header  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Header  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-    <header class="mainHeader">
+  <header class="mainHeader">
+    <div class="container">
       <h1> Hur kommer Allsvenskan 2020 att sluta? </h1>
-    </header>
-
-    <!-- Menu Navigation Bar -->
-    <div class="menu">
-      <a href="index.html">Hem</a>
-      <a href="tavla.html">Tävla</a>
-    <div class="menu-login">
-      <a href="login.html">Inloggning</a>
     </div>
-    </div>
+  </header>
 
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Page  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~ Navigation bar  ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-    <div class="text">
-      <p>
-        Vill du sätta dina kunskaper om Allsvenskan på prov? Anta utmaningen
-        och tippa hur Allsvenskan 2020 kommer att sluta. Placera ut lagen på den
-        plats du tror att laget kommer att sluta i serien. För varje felaktig
-        placering tilldelas du ett straffpoäng och lägsta totala poäng vinner.
-        Till exempel om du tippar att Örebro ska hamna på plats 9, men de blir 11:a,
-        så får du 2 poäng.
-      </p>
+  <nav class = "nav-bar">
+
+    <div class="container">
+
+      <ul> <!-- Unorder list -->
+        <li>  <a href="index.html"> Hem </a>        </li>
+        <li>  <a href="tavla.html"> Tävla </a>      </li>
+        <li>  <a href="login.html"> Inloggning </a> </li>
+      </ul>
 
     </div>
 
-    <div class="image1">
-      <br>
-      <br>
-      <br>
-      <img src ="images/halsdukar.jpg" alt = "Image not found" width = 500 height = 300>
-    </div>
+  </nav>
 
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Footer  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~  Intro ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <section id = "index-intro">
+    <div class="container">
+      <h1> Utmana vänner och sätt dina fotbollskunskaper på prov genom
+      tippa hur den Allsvenska säsongen 2020 kommer att sluta </h1>
+    </div>
+  </section>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Page  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <section id = "index-main">
+
+  <div class="container">
+    <p>
+      Vill du sätta dina kunskaper om Allsvenskan på prov? Anta utmaningen
+      och tippa hur Allsvenskan 2020 kommer att sluta. Placera ut lagen på den
+      plats du tror att laget kommer att sluta i serien. För varje felaktig
+      placering tilldelas du ett straffpoäng och lägsta totala poäng vinner.
+      Till exempel om du tippar att Örebro ska hamna på plats 9, men de blir 11:a,
+      så får du 2 poäng.
+    </p>
+  </div>
+  </section>
+
+  <div class="image1">
+    <img src ="images/halsdukar.jpg" alt = "Image not found" width = 500 height = 300>
+  </div>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Footer  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <footer class = "mainFooter">
       <!-- &copy  give the copyright symbol -->

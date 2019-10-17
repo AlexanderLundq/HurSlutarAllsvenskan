@@ -1,3 +1,22 @@
+#index-intro{
+  background-image: url("../images/index_intro.jpg");
+  background-position: center right;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#index-intro h1{
+  color: white;
+  font-size: 30px;
+  line-height: 1.6em;
+  padding-top: 30px;
+}
+
+#index-main p {
+  font-size: 20px;
+}
+
 .image1{
+  padding-top: 50px;
   text-align: center;
 }

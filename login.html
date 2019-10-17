@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Head ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<head>
   <!-- What can be seen in tab-->
   <title> Hur slutar Allsvenskan? </title>
 
@@ -8,31 +10,54 @@
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/login.css">
 
-  <body>
+</head>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<body>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Header  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <header class="mainHeader">
-      <h1> Hur kommer Allsvenskan 2020 att sluta? </h1>
+      <div class="container">
+        <h1> Hur kommer Allsvenskan 2020 att sluta? </h1>
+      </div>
     </header>
 
-    <!-- Menu Navigation Bar -->
-    <div class="menu">
-      <a href="index.html">Hem</a>
-      <a href="tavla.html">Tävla</a>
-    <div class="menu-login">
-      <a href="login.html">Inloggning</a>
-    </div>
-    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~ Navigation bar  ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <nav class = "nav-bar">
+
+      <div class="container">
+
+        <ul> <!-- Unorder list -->
+          <li>  <a href="index.html"> Hem </a>        </li>
+          <li>  <a href="tavla.html"> Tävla </a>      </li>
+          <li>  <a href="login.html"> Inloggning </a> </li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~ Page  ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <form class = "form-login">
 
+      <div class="container">
+
       <div class="form-loing-div">
-        <label > Name </label>
+        <label > Namn </label>
         <input type = "text" name="Name" placeholder="Namn"> </input>
       </div>
 
       <div class="form-login-div">
         <label> E-post</label>
         <input type = "email" name="email" placeholder="mail@example.com"> </input>
+      </div>
+
+      <div class="form-login-div">
+      <label for="inputdob"> Date Of Birth </label>
+      <input type="date"> </input>
       </div>
 
       <div class="form-login-div">
@@ -60,6 +85,9 @@
 
       <br>
       <input type= "submit" name = "submit" value = "submit"> </input>
+
+    </div>
+
     </form>
 
     <footer class = "mainFooter">

@@ -1,8 +1,13 @@
-.tippa-main a{
-  text-decoration: none;  /*No underline*/
-  color:red;             /*Black color*/
+.image-tavla{
+  padding-top: 50 px;
+  text-align: center;
 }
 
-.image-tavla{
-  text-align: center;
+#tavla-page a{
+  text-decoration: none;    /* No underline */
+  color: red;
+}
+
+#tavla-page a:hover{
+  color:blue;
 }

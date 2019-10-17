@@ -2,10 +2,6 @@
   padding:20px;
 }
 
-.form-login .form-login-div{
-  padding-bottom: 15px; /* Set spacing between inputs */
-}
-
 .form-login label {
   display:block; /* Change from inline (everything on same line) to block*/
 }
@@ -14,4 +10,13 @@
 .form-login input[type="text"], input[type="email"] {
   padding:8px;
   width: 50%; /* Makes area where you enter response bigger */
+}
+
+.form-login input[type="date"] {
+  padding:8px;
+  width: 30%; /* Makes area where you enter response bigger */
+}
+
+.form-login .form-login-div{
+  padding-bottom: 15px; /* Set spacing between inputs */
 }

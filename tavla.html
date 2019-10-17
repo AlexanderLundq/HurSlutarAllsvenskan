@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html>
 
-<!-- ~~~~~~~~~~~~~~~~~~~ Title and CSS links ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- ~~~~~~~~~~~~~~~~~~~ Head ~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<head>
 
   <!-- What can be seen in tab -->
   <title> Hur slutar Allsvenskan? </title>
@@ -10,36 +12,45 @@
   <link rel="stylesheet" href="css/master.css">
   <link rel="stylesheet" href="css/tavla.css">
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+</head>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <body>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Header  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <header class="mainHeader">
+      <div class="container">
       <h1> Hur kommer Allsvenskan 2020 att sluta? </h1>
+      </div>
     </header>
 
-    <!-- Menu Navigation Bar -->
-    <div class="menu">
-      <a href="index.html">Hem</a>
-      <a href="tavla.html">Tävla</a>
-    <div class="menu-login">
-      <a href="login.html">Inloggning</a>
-    </div>
-    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~ Navigation bar  ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <nav class = "nav-bar">
+
+      <div class="container">
+
+        <ul> <!-- Unorder list -->
+          <li>  <a href="index.html"> Hem </a>        </li>
+          <li>  <a href="tavla.html"> Tävla </a>      </li>
+          <li>  <a href="login.html"> Inloggning </a> </li>
+        </ul>
+
+      </div>
+
+    </nav>
 
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Page  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <!-- Main structure for tippa page -->
-    <div class="tippa-main">
-      <h4> Vänligen <a href="login.html">logga in </a> in för att tävla </h4>
-    </div>
+    <section id = tavla-page>
+      <div class="container">
+        <h4> Vänligen <a href="login.html" id = "login-link">logga in </a> in för att tävla </h4>
+      </div>
+    </section>
 
     <div class="image-tavla">
-      <br>
-      <br>
-      <br>
       <img src ="images/tavla.jpg" alt = "Image not found" width = 500 height = 300>
     </div>
 

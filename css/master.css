@@ -1,33 +1,54 @@
+/* ----------------------------  Body  ------------------------------- */
+body {
+  background-color: #f4f4f4; /* Light grey */
+  color: #555;
+  font-family: Arial, Helvetica, sans-sans-serif;
+  font-size: 16px;
+  line-height: 1.6 em;
+  margin:0px;
+}
+
+/* ----------------------------  Container  ------------------------------- */
+.container {
+  width: 80%;
+  margin: auto;
+  overflow:hidden;
+}
+
 /* ----------------------------  Header  ------------------------------- */
 
 .mainHeader {
     background-color:LIGHTCYAN;
-    color:black;
-    padding:10px;
 }
-.menu {
-        position: sticky;
-        top: 0;
-        background-color: AQUAMARINE;
-        padding:10px 0px 10px 0px;
-        color:white;
-        margin: 0 auto;
-        overflow: hidden;
-    }
+/* ------------------------- Navigation bar ---------------------------- */
 
-.menu a{
-  text-decoration: none;  /*No underline*/
-  color:#000;             /*Black color*/
+.nav-bar {
+  background-color: #333; /* Dark grey*/
+  color: #FFF;            /* White */
+
 }
 
-.menu a:hover{
+.nav-bar ul {
+  padding: 0;
+  list-style: none; <!-- No bullet points-->
+}
+
+.nav-bar li {
+  display: inline;
+
+}
+
+.nav-bar a {
+  color: #fff;              /* White */
+  text-decoration: none;    /* No underline */
+  font-size: 18px;          /* Make text bigger */
+  padding-right: 15px;
+
+}
+
+.nav-bar a:hover{
   color:red;              /*Set the color to red*/
 }
-
- .menu-login {
-      right: auto;
-      float: right;
-  }
 
 /* ----------------------------  Footer  ------------------------------- */
   .mainFooter{
