@@ -1,5 +1,8 @@
+// Code is based on https://www.youtube.com/watch?v=hdI2bqOjy3c&t=2792s
+
 // This is a comment
 // Semi-colon not mandatory in JS
+// JS is a procedual language, it has support for both OO and functional programming
 
 // F12 in chrome on windows to open console (for debug printing)
 // Console has a couple of different methods
@@ -71,3 +74,170 @@ console.log(firstName, state);
 // Add properties
 person.email = 'john@gmail.com';
 console.log(person);
+
+// Array of objects
+const todos = [
+  {
+    id: 1,
+    text: 'Take out trash',
+    isCompleted: true
+  },
+  {
+    id: 2,
+    text: 'Meeting with boss',
+    isCompleted: true
+  },
+  {
+    id: 3,
+    text: 'Dentist appointment',
+    isCompleted: false
+  },
+];
+console.log(todos);
+console.log(todos[1].text);
+
+// JSON format = JavaScript Object Notation format
+// used when sending data to a server
+// https://www.freeformatter.com/json-formatter.html
+// Copy everything from [ to ] (without final semicolon)
+// or use the method below
+const todoJSON = JSON.stringify(todos);
+console.log(todoJSON);
+
+// loops
+
+for(let i = 0; i < 10; i++){
+  console.log(i);
+}
+let i = 0;
+while(i < 10){
+  console.log(`While Loop number: ${i}`);
+  i++;
+}
+
+// todo is the variable for each item
+for(let todo of todos){
+  console.log(todo.text);
+}
+
+todos.forEach(function(todo) {
+  console.log(todo.text);
+});
+
+// map returns array
+const todoText = todos.map(function(todo) {
+    return todo.text;
+});
+console.log(todoText);
+
+// return array with text but only for todos that are completed
+const todoCompletedTrue = todos.filter(function(todo) {
+  return todo.isCompleted === true;
+}).map(function(todo) {
+  return todo.text
+})
+console.log(todoCompletedTrue);
+//-----------------------------------------------------------------------------
+// Conditionals
+
+  const x_10 = 10;
+
+  // == matches value
+  // === also matches (check) that data types are the same
+  // || is or
+  // && is and
+  if(x_10 === 10 ){
+    console.log('x is 10')
+  } else if (x_10 > 10){
+    console.log('x is greater than 10')
+  } else {
+    console.log('x is less than 10')
+  }
+
+  // Ternary (conditional) operator
+  // If condition is ture, set to red, else (:) set to blue
+  const color_2 = x_10 === 10 ? 'red' : 'blue'
+  console.log(color_2)
+
+  // Switches
+  switch (color_2) {
+    case 'red':
+      console.log('Color is red');
+      break;
+    case 'blue':
+      console.log('Color is blue');
+      break;
+    default:
+      console.log('Color is not red or blue');
+      break;
+  }
+
+//-----------------------------------------------------------------------------
+// Functions
+
+  // Parameters can have deafault values
+  // If function is called without parameters it will go by deafault
+  // If no deafult values are given it will give NaN = Not-a-Number
+  function addNums(num1 = 1, num2 = 1){
+    return num1 + num2
+  }
+  console.log(addNums());
+  console.log(addNums(5,4));
+
+  // Arrow functions
+  const addNums2 = (num1 = 1, num2 = 1) => {
+    return num1 + num2
+  }
+  console.log(addNums(5,5));
+
+  // Allows you to write simple functions easier
+  const multiply = (x, y) => x*y;
+  console.log(multiply(10,10));
+
+//-----------------------------------------------------------------------------
+// Object Oriented programming
+
+  // Constructor function
+    function Person(firstName, lastName, dob) {
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.dob = new Date(dob); // Date format string date type
+
+      this.getBirthYear = function(){
+        return this.dob.getFullYear();
+      }
+    }
+
+    // Prototypes (if we don't want functions in the objects)
+    Person.prototype.getLastName = function() {
+      return this.lastName;
+    }
+
+    // Instantiate object
+    const person1 = new Person('John', 'Doe', '4-3-1998')
+
+    console.log(person1);
+    console.log(person1.dob.getFullYear());
+    console.log(person1.getBirthYear());
+    console.log(person1.getLastName());
+
+// Classes (same as above but different syntax)
+  class Person2 {
+    constructor(firstName, lastName, dob){
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.dob = new Date(dob);
+    }
+    getBirthYear(){
+      return this.dob.getFullYear();
+    }
+    getLastName(){
+      return this.lastName;
+    }
+  }
+
+  const person2 = new Person('John', 'Doe', '4-3-1998')
+  console.log(person2.getLastName());
+
+  //-----------------------------------------------------------------------------
+  // Object Oriented programming

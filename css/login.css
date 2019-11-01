@@ -1,22 +1,61 @@
-.form-login {
-  padding:20px;
+#form-login {
+  padding: 2rem;
+  background: #f4f4f4;
 }
 
-.form-login label {
-  display:block; /* Change from inline (everything on same line) to block*/
+#form-login label {
+  display: block;
 }
 
-/* Target only input with type text to not make button bigger */
-.form-login input[type="text"], input[type="email"] {
-  padding:8px;
-  width: 50%; /* Makes area where you enter response bigger */
+#form-login input[type='email'] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.form-login input[type="date"] {
-  padding:8px;
-  width: 30%; /* Makes area where you enter response bigger */
+#form-login input[type='text'] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.form-login .form-login-div{
-  padding-bottom: 15px; /* Set spacing between inputs */
+#submit_login {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+#submit_login:hover {
+  background: #444;
+}
+
+.error_login {
+  background: orangered;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+}
+
+#new_user {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 0;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+#new_user:hover {
+  background: #444;
 }
