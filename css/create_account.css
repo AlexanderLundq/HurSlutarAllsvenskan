@@ -1,13 +1,13 @@
-#form-login {
+#form-create_account {
   padding: 2rem;
   background: #f4f4f4;
 }
 
-#form-login label {
+#form-create_account label {
   display: block;
 }
 
-#form-login input[type='email'] {
+#form-create_account input[type='text'] {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
@@ -15,7 +15,7 @@
   border: 1px solid #ccc;
 }
 
-#form-login input[type='text'] {
+#form-create_account input[type='email'] {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
@@ -23,7 +23,7 @@
   border: 1px solid #ccc;
 }
 
-#submit_login {
+#submit_create_account {
   display: block;
   width: 100%;
   padding: 10px 15px;
@@ -34,18 +34,18 @@
   margin: 5px 0;
 }
 
-#submit_login:hover {
+#submit_create_account:hover {
   background: #444;
 }
 
-.error_login {
+.error_create_account {
   background: orangered;
   color: #fff;
   padding: 5px;
   margin: 5px;
 }
 
-#new_user {
+#old_user {
   display: block;
   width: 100%;
   padding: 10px 15px;
@@ -56,11 +56,11 @@
   margin: 5px 0;
 }
 
-#new_user:hover {
+#old_user:hover {
   background: #444;
 }
 
-#new_user a{
+#old_user a{
   color: #fff;
   text-decoration: none;
 }

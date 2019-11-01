@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Head ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<head>
+
+  <!-- What can be seen in tab -->
+  <title> Hur slutar Allsvenskan? </title>
+
+  <!-- Link to CSS files used for this page -->
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/create_account.css">
+
+</head>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Body ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<body>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Header  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <header class="mainHeader">
+    <div class="container">
+      <h1> Hur kommer Allsvenskan 2020 att sluta? </h1>
+    </div>
+  </header>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~ Navigation bar  ~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <nav class = "nav-bar">
+
+    <div class="container">
+
+      <ul> <!-- Unorder list -->
+        <li>  <a href="index.html"> Hem </a>        </li>
+        <li>  <a href="tavla.html"> Tävla </a>      </li>
+        <li>  <a href="om.html"> Om HSA </a>        </li>
+        <li>  <a href="login.html"> Inloggning </a> </li>
+      </ul>
+
+    </div>
+
+  </nav>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Page  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+  <section class="container">
+
+    <form id = "form-create_account">
+
+      <h1> Skapa konto </H1>
+
+      <!-- Empty div  to be able to print messages
+            if for example an field is empty -->
+      <div id="msg-create-account">
+      </div>
+
+      <!--User input first name -->
+      <div>
+        <label for="user_firstName"> Förnamn: </label>
+        <input type="text" id='firstName'>
+      </div>
+
+      <!-- User input last name -->
+      <div>
+        <label for="user_lastName"> Efternamn: </label>
+        <input type="text" id='lastName'>
+      </div>
+
+      <!-- User inputs email -->
+      <div>
+        <label for="user_email"> E-post: </label>
+        <input type="email" id='email'>
+      </div>
+
+      <!-- User inputs password -->
+      <div>
+        <label for="user_password"> Lösenord: </label>
+        <input type="text" id='password'>
+      </div>
+
+      <input id = "submit_create_account" type = "submit" value = "Skapa konto">
+
+      <button id = "old_user" type="button">
+      <a href="login.html"> Har du redan ett konto?
+      Logga in </a>
+      </button>
+
+  </form>
+
+  </section>
+
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~ Footer  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <footer class = "mainFooter">
+      <!-- &copy  give the copyright symbol -->
+      <p> Copyrigth &copy 2019, Niklas Karlsson </p>
+    </footer>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~ JavaScript  ~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <script src="JavaScript/create_account.js"></script>
+
+  </body>
+
+</html>

@@ -4,7 +4,7 @@
 const form_login      = document.querySelector('#form-login');
 const email_input     = document.querySelector('#login-email');
 const password_input  = document.querySelector('#login-password');
-const msg_login       = document.querySelector('#msg-login')
+const msg_login       = document.querySelector('#msg-login');
 
 // Add addEventListener to the submit button in the form
 form_login.addEventListener('submit', onSubmit);
