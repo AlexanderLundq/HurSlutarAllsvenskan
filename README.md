@@ -14,7 +14,7 @@ The end goal is to use an Raspberry Pi as a server.
 
 Markup code for each page can be found in the html files.
 CSS and JavaScript are in their respective folders.
-Images also have their own folder. 
+Images also have their own folder.
 
 ## Tutorials
 
